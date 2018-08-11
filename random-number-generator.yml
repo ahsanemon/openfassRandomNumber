@@ -1,0 +1,9 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  random-number-generator:
+    lang: Dockerfile
+    handler: .
+    image: ahsanemon/random-number-generator:latest
